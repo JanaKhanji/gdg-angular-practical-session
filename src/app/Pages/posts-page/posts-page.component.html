@@ -1,0 +1,17 @@
+<div class="input-group">
+    <input
+        type="text"
+        class="form-control"
+        placeholder="Search by title"
+        [(ngModel)]="searchText"
+        (keyup)="searchPosts()"
+    >   
+    <button class="btn btn-outline-secondary" (click)="clearSearch()" type="button">
+        Clear Search
+    </button>
+</div>
+<div class="row py-2">
+    <div class="col-md-4 py-1" *ngFor="let post of displayedPosts">
+        <app-post-card [post]="post"></app-post-card>
+    </div>
+</div>

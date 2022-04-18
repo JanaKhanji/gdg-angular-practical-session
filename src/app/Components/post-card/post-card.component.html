@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="w-100 image-style position-relative gradientBackground">
+    </div>
+    <div class="card-body card-size">
+        <h4 class="card-title card-title-height mb-1">{{post.title}}</h4>
+        <p class="card-text p-y-1 text-truncate">{{post.body}}</p>
+    </div>
+    <div class="card-footer bg-transparent border-0">
+        <a  [routerLink]="[post.id]"class="card-link">Read More</a>
+    </div>
+</div>
